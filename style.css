@@ -92,112 +92,152 @@ p {
 }
 
 /* =========================================
-   Page 1: 삼성 라이온즈 전용 스타일
+   Page 1: 삼성 라이온즈 상세 페이지 스타일
 ========================================= */
 
-/* 1. 페이지 배경 디자인 */
+/* 배경 설정 */
 .page-samsung {
-    /* 삼성의 파란색을 활용한 대각선 그라데이션 배경 */
-    background: linear-gradient(135deg, #074CA1 0%, #0a60c9 60%, #4285f4 100%);
-    min-height: 100vh; /* 화면 전체 높이 채우기 */
-    display: flex;
-    justify-content: center; /* 중앙 정렬 */
-    align-items: center;
-    padding: 30px 20px; /* 상하, 좌우 여백 */
-    color: #333; /* 기본 글자색 (짙은 회색) */
+    background: linear-gradient(135deg, #074CA1 0%, #0064b7 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: block; /* 내용이 길어서 flex 해제 */
 }
 
-/* 2. 내용을 담는 중앙 카드 박스 */
-.content-container {
-    background-color: rgba(255, 255, 255, 0.95); /* 약간 투명한 흰색 배경 */
-    width: 100%;
-    max-width: 700px; /* 최대 너비 제한 */
-    padding: 40px;
-    border-radius: 20px; /* 둥근 모서리 */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* 부드럽고 깊은 그림자 */
-    text-align: center; /* 텍스트 중앙 정렬 */
+/* 컨테이너 확장 (Wide Mode) */
+.content-container.wide-mode {
+    background-color: #fff;
+    max-width: 800px; /* 폭을 넓힘 */
+    margin: 0 auto; /* 가운데 정렬 */
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    text-align: left; /* 기본 정렬 왼쪽으로 */
 }
 
-/* 3. 상단 헤더 (로고 + 팀명) */
+/* 헤더 중앙 정렬 */
 .team-header {
-    margin-bottom: 30px;
-    border-bottom: 3px solid #074CA1; /* 파란색 밑줄 */
-    padding-bottom: 20px;
+    text-align: center;
+    border-bottom: 4px solid #074CA1;
+    margin-bottom: 40px;
 }
 
-.header-logo {
-    width: 130px; /* 로고 크기 */
-    height: auto;
-    margin-bottom: 10px;
+/* 섹션 공통 스타일 */
+.info-section {
+    margin-bottom: 40px;
 }
 
-.team-header h1 {
-    font-size: 2.5rem;
-    color: #074CA1; /* 팀 컬러 */
-    margin: 0;
-}
-
-.team-subtitle {
-    display: block;
-    font-size: 1.2rem;
-    color: #777;
-    font-weight: normal;
-    margin-top: 5px;
-}
-
-/* 4. 설명 섹션 */
-.team-description h2 {
-    font-size: 1.6rem;
-    margin-bottom: 20px;
-    color: #222;
-}
-
-.team-description p {
-    font-size: 1.1rem;
-    line-height: 1.7; /* 줄 간격 넓게 */
+.info-section h2 {
+    color: #074CA1;
+    font-size: 1.8rem;
     margin-bottom: 15px;
-    word-break: keep-all; /* 한글 단어가 잘리지 않게 */
-}
-
-/* 5. 주요 특징 박스 (연고지, 홈구장) */
-.team-features {
     display: flex;
-    justify-content: center;
-    gap: 20px; /* 박스 사이 간격 */
-    margin: 35px 0;
+    align-items: center;
+    gap: 10px;
 }
 
-.feature-box {
-    flex: 1; /* 너비 균등 분배 */
-    background-color: #f0f6ff; /* 아주 연한 파란색 배경 */
+.info-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 10px;
+    word-break: keep-all;
+}
+
+/* 구분선 */
+.divider {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 30px 0;
+}
+
+/* 선수 소개 그리드 (카드 배치) */
+.player-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.player-card {
+    flex: 1;
+    background: #f4f9ff;
+    border: 1px solid #cce0ff;
     padding: 20px;
     border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }
 
-.feature-box h3 {
-    font-size: 1.1rem;
-    color: #074CA1;
-    margin-bottom: 8px;
-}
-
-/* 6. '메인으로 돌아가기' 버튼 스타일 변경 */
-.page-samsung .back-btn {
+.player-card h3 {
+    color: #000;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #074CA1;
+    padding-bottom: 5px;
     display: inline-block;
-    background-color: #074CA1; /* 버튼색도 팀 컬러로 */
-    padding: 12px 30px;
-    font-weight: bold;
-    border-radius: 30px; /* 더 둥글게 */
 }
 
-.page-samsung .back-btn:hover {
-    background-color: #053675; /* 마우스 올리면 더 진하게 */
-    transform: translateY(-2px); /* 살짝 위로 떠오르는 효과 */
-    box-shadow: 0 5px 15px rgba(7, 76, 161, 0.3); /* 버튼 그림자 */
+.player-card .position {
+    font-size: 0.9rem;
+    color: #666;
+    font-weight: normal;
+}
+
+.player-card ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.player-card li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.player-card li::before {
+    content: "•";
+    color: #074CA1;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+/* 응원가 버튼 스타일 */
+.links-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.song-btn {
+    background-color: #333;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 0.95rem;
+}
+
+.song-btn:hover {
+    background-color: #d00; /* 유튜브 레드 컬러 포인트 */
+    transform: translateY(-2px);
+}
+
+/* 하단 돌아가기 버튼 중앙 정렬 */
+.back-btn {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* 모바일 최적화 */
-@media (max-width: 600px) {
-    .content-container { padding: 30px 20px; }
-    .team-header h1 { font-size: 2rem; }
-    .team-features { flex-direction: column; } /* 모바일선 세로 배치 */
+@media (max-width: 768px) {
+    .content-container.wide-mode { padding: 30px 20px; }
+    .player-grid { flex-direction: column; } /* 모바일에서는 선수 카드 세로로 */
+    .links-box { flex-direction: column; }
+    .song-btn { text-align: center; }
 }
