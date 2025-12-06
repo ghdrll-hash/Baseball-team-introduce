@@ -241,3 +241,13 @@ p {
     .links-box { flex-direction: column; }
     .song-btn { text-align: center; }
 }
+
+/* =========================================
+   [버그 수정] 상세 페이지 스크롤 활성화
+   메인 화면의 '스크롤 잠금' 설정을 해제합니다.
+========================================= */
+body.page-samsung {
+    height: auto !important;      /* 화면 높이를 콘텐츠 길이에 맞게 늘림 */
+    overflow-y: auto !important;  /* 세로 스크롤 허용 */
+    overflow-x: hidden;           /* 가로 스크롤은 방지 */
+}
