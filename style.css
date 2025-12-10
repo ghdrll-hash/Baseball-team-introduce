@@ -311,3 +311,64 @@ body.page-hanwha {
     overflow-y: auto !important;
     overflow-x: hidden;
 }
+
+/* =========================================
+   Page 3: LG 트윈스 전용 스타일
+========================================= */
+
+/* 1. 배경 디자인 (LG 트윈스 레드 테마) */
+.page-lg {
+    /* 강렬한 레드와 어두운 레드의 조화 */
+    background: linear-gradient(135deg, #C3002F 0%, #a00026 60%, #222 100%);
+    min-height: 100vh;
+    padding: 40px 20px;
+    display: block;
+    color: #333;
+}
+
+/* 2. LG 페이지 헤더 포인트 컬러 */
+.page-lg .team-header {
+    border-bottom: 4px solid #C3002F;
+}
+
+.page-lg .team-header h1 {
+    color: #C3002F;
+}
+
+/* 3. 섹션 제목 포인트 컬러 */
+.page-lg .info-section h2 {
+    color: #C3002F;
+}
+
+/* 4. 선수 카드 포인트 컬러 */
+.page-lg .player-card h3 {
+    border-bottom: 2px solid #C3002F;
+}
+
+.page-lg .player-card li::before {
+    color: #C3002F;
+}
+
+.page-lg .player-card {
+    background: #fff;
+    border: 1px solid #ffd1d1; /* 옅은 붉은 테두리 */
+}
+
+/* 5. 버튼 색상 변경 (LG는 검정+빨강 조합도 많이 씀) */
+.page-lg .back-btn {
+    background-color: #C3002F;
+}
+
+.page-lg .back-btn:hover {
+    background-color: #960024;
+    box-shadow: 0 5px 15px rgba(195, 0, 47, 0.4);
+}
+
+/* =========================================
+   [필수] 스크롤 버그 수정 (LG 페이지용)
+========================================= */
+body.page-lg {
+    height: auto !important;
+    overflow-y: auto !important;
+    overflow-x: hidden;
+}
