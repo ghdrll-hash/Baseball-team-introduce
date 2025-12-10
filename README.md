@@ -21,13 +21,21 @@
 ## 폴더 구조
 My-KBO-Website
 ├── index.html      # 메인 홈페이지 (3개 구단 선택 화면)
+
 ├── page1.html      # 삼성 라이온즈 상세 페이지
+
 ├── page2.html      # 한화 이글스 상세 페이지
+
 ├── page3.html      # LG 트윈스 상세 페이지
+
 ├── style.css       # 전체 디자인 및 스타일 시트
+
 ├── logo_samsung.png
+
 ├── logo_hanwha.png
+
 ├── logo_lg.png
+
 └── README.md       # 프로젝트 설명 문서
 
 ## 실행 방법
