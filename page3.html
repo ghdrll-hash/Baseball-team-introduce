@@ -3,36 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>임시 페이지</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-            flex-direction: column;
-            font-family: sans-serif;
-        }
-        h1 { color: #333; margin-bottom: 20px; }
-        .back-btn {
-            padding: 10px 20px;
-            background-color: #333;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-        .back-btn:hover { background-color: #555; }
-    </style>
+    <title>LG 트윈스 상세 소개</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="page-lg">
 
-    <h1>🚧 페이지 3 - 제작 중입니다 🚧</h1>
-    
-    <p>멋진 내용을 준비하고 있습니다.</p>
-    <br>
-    <a href="index.html" class="back-btn">메인으로 돌아가기</a>
+    <div class="content-container wide-mode">
+        <header class="team-header">
+            <img src="logo_lg.png" alt="LG 트윈스 로고" class="header-logo">
+            <h1>LG 트윈스<span class="team-subtitle">LG Twins</span></h1>
+        </header>
+        
+        <section class="info-section">
+            <h2>⚾ 무적 LG의 신화</h2>
+            <p>
+                1990년 창단 첫해 우승을 시작으로 1994년까지 '초기 왕조'를 이룩한 서울의 자존심입니다.
+                긴 암흑기를 지나 2023년, 마침내 29년 만의 우승을 차지하며 '리빌딩 성공 모델'의 상징이 되었습니다.
+                파워, 스피드, 수비의 완벽한 조화를 갖춘 '신바람 야구'는 LG 트윈스의 가장 강력한 무기입니다.
+            </p>
+        </section>
+
+        <hr class="divider">
+
+        <section class="info-section">
+            <h2>🏆 시즌 리뷰 및 전망</h2>
+            <div class="text-box">
+                <h3>2025 시즌 리뷰: 통합 우승 달성</h3>
+                <p>
+                    시즌 내내 하위권 추락 없이 한화와 치열한 선두 경쟁을 펼쳤습니다.
+                    강력한 국내 선발진과 쉴 틈 없는 타선의 조화로 정규시즌 1위를 차지했으며, 한국시리즈에서 한화를 4승 1패로 제압하고 2년 만에 다시 통합 우승의 위업을 달성했습니다.
+                </p>
+                
+                <h3 style="margin-top: 20px;">2026 시즌 전망: 왕조 구축</h3>
+                <p>
+                    외국인 선수 전원 재계약과 아시아 쿼터 '웰스' 영입으로 전력을 강화했습니다. 
+                    주장 박해민의 재계약으로 리더십을 지켰고, 홍창기의 부상 복귀로 더욱 무서운 전력이 예상됩니다. 2026년에도 가장 강력한 우승 후보로서 2년 연속 제패를 노립니다.
+                </p>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h2>🌟 팀 대표 선수</h2>
+            <div class="player-grid">
+                <div class="player-card">
+                    <h3>임찬규 <span class="position">(투수)</span></h3>
+                    <ul>
+                        <li>LG 선발진의 기둥, '기량 완성형 선발투수'</li>
+                        <li>국내 선수 중 평균자책점 1위, 11승 기록</li>
+                        <li>팀 순위 경쟁의 결정적 역할 수행</li>
+                    </ul>
+                </div>
+                <div class="player-card">
+                    <h3>박해민 <span class="position">(타자)</span></h3>
+                    <ul>
+                        <li>공격의 시동을 거는 완벽한 '템포 세터'</li>
+                        <li>49도루 기록, 리그 최고의 빠른 발</li>
+                        <li>내외야 밸런스를 잡는 핵심이자 캡틴</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h2>🎵 대표 응원가</h2>
+            <div class="links-box">
+                <a href="https://youtu.be/__JKOzv3meQ?si=TYVMJQNK8b98sjEj" target="_blank" class="song-btn">홍창기 응원가 ▶</a>
+                <a href="https://youtu.be/M-PwM12jIQY?si=VeBVvh5W444KDrxn" target="_blank" class="song-btn">오스틴 응원가 ▶</a>
+                <a href="https://youtu.be/xr6wPZxyhxI?si=P11qxYqhH7PO2-9c" target="_blank" class="song-btn">서울의 아리아 ▶</a>
+            </div>
+        </section>
+
+        <br>
+        <a href="index.html" class="back-btn">메인으로 돌아가기</a>
+    </div>
 
 </body>
 </html>
+

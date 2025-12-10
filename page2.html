@@ -3,36 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>임시 페이지</title>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-            flex-direction: column;
-            font-family: sans-serif;
-        }
-        h1 { color: #333; margin-bottom: 20px; }
-        .back-btn {
-            padding: 10px 20px;
-            background-color: #333;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            transition: 0.3s;
-        }
-        .back-btn:hover { background-color: #555; }
-    </style>
+    <title>한화 이글스 상세 소개</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="page-hanwha">
 
-    <h1>🚧 페이지 2 - 제작 중입니다 🚧</h1>
-    
-    <p>멋진 내용을 준비하고 있습니다.</p>
-    <br>
-    <a href="index.html" class="back-btn">메인으로 돌아가기</a>
+    <div class="content-container wide-mode">
+        <header class="team-header">
+            <img src="logo_hanwha.png" alt="한화 이글스 로고" class="header-logo">
+            <h1>한화 이글스<span class="team-subtitle">Hanwha Eagles</span></h1>
+        </header>
+        
+        <section class="info-section">
+            <h2>🦅 비상의 날개짓</h2>
+            <p>
+                1986년 빙그레 이글스로 출범한 한화는 1999년 한국시리즈 우승을 거두며 리그 강팀으로 자리 잡았습니다.
+                이후 장기 육성 시스템 강화와 2023년 류현진의 복귀로 폭발적인 관심을 받았으며, 야구계의 '큰손'으로서 적극적인 외부 영입을 통해 전력을 강화해 왔습니다.
+            </p>
+        </section>
+
+        <hr class="divider">
+
+        <section class="info-section">
+            <h2>⚾ 시즌 리뷰 및 전망</h2>
+            <div class="text-box">
+                <h3>2025 시즌 리뷰: 기적의 반등</h3>
+                <p>
+                    시즌 초반 10위를 기록하며 힘든 출발을 했으나, 류현진·문동주와 강력한 외국인 원투펀치를 앞세워 반등에 성공했습니다.
+                    2018년 이후 처음으로 포스트시즌에 진출해 삼성을 꺾고 한국시리즈 무대를 밟았으며, 비록 LG에게 패했지만 팬들에게 잊을 수 없는 시즌을 선사했습니다.
+                </p>
+                
+                <h3 style="margin-top: 20px;">2026 시즌 전망: 다이너마이트 타선</h3>
+                <p>
+                    외국인 투수들의 이탈로 우려가 있지만, 페라자 재영입과 KT 프랜차이즈 스타 강백호 선수를 4년 100억 원에 영입하며 강력한 승부수를 던졌습니다.
+                    '페라자-문현빈-노시환-강백호-채은성'으로 이어지는 타선은 9점을 주면 10점을 뽑아내는 화끈한 공격 야구로 다시 한번 가을야구에 도전합니다.
+                </p>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h2>🌟 팀 대표 선수</h2>
+            <div class="player-grid">
+                <div class="player-card">
+                    <h3>류현진 <span class="position">(투수)</span></h3>
+                    <ul>
+                        <li>경기 운영의 교과서, 흔들리는 팀의 중심 </li>
+                        <li>국내 좌완 선발 중 가장 좋은 평균자책점 기록 </li>
+                        <li>젊은 투수들의 성장을 돕는 멘토 역할 </li>
+                    </ul>
+                </div>
+                <div class="player-card">
+                    <h3>노시환 <span class="position">(타자)</span></h3>
+                    <ul>
+                        <li>144 전 경기 출장하며 '철강왕' 증명 </li>
+                        <li>2년 만에 30홈런-100타점 달성 (국내 유일 30홈런) </li>
+                        <li>후반기 부활과 함께 팀의 중심 타자 역할 수행 </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h2>🎵 대표 응원가</h2>
+            <div class="links-box">
+                <a href="https://youtu.be/OqjwDCdnFgc?si=FmgDt8CkabNGLI21" target="_blank" class="song-btn">이진영 응원가 ▶</a>
+                <a href="https://youtu.be/ZL5ybmN6bgw?si=Tk0YzkTqvKXvXSSI" target="_blank" class="song-btn">최인호 응원가 ▶</a>
+                <a href="https://youtu.be/cD_xthB4umE?si=pM5aSBYPbn6sfajB" target="_blank" class="song-btn">사랑한다 이글스 ▶</a>
+            </div>
+        </section>
+
+        <br>
+        <a href="index.html" class="back-btn">메인으로 돌아가기</a>
+    </div>
 
 </body>
 </html>
+
