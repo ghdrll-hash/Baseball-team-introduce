@@ -20,6 +20,7 @@
 
 ## 폴더 구조
 My-KBO-Website
+
 ├── index.html      # 메인 홈페이지 (3개 구단 선택 화면)
 
 ├── page1.html      # 삼성 라이온즈 상세 페이지
